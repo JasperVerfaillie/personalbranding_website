@@ -1,20 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,700,900');
 
-$color1: #30211e;
-$color2:#99cc33;
-$color3:#256136;
-$color4: #9c9b9b;
+$color1: rgba(233, 232, 232, 1);
+$color4: #000;
 $color5: #fff;
 
 $fontset1:'Lato', sans-serif;
-$fontset2: qanelassoft_extrabold;
-$fontset3: qanelassoft_ultralight;
+$fontset2: sans-serif;
+$fontset3: serif;
 
 body {
   font-family: $fontset1;
   font-weight: 300;
   font-size:1em;
-  color: $color1;
+  color: $color4;
 }
 nav{
   background-color: $color5;
@@ -22,7 +20,7 @@ nav{
 
 
 .nav-link {
-  color: $color1;
+  color: $color4;
 }
 
 .nav-item {
@@ -40,10 +38,10 @@ nav{
 .nav-item {
   color:$color1;
   :hover{
-    color:$color2;
+    color:$color4;
   }
   li.active{
-  color:$color2;
+  color:$color4;
   font-weight:900;}
 }
 
@@ -91,7 +89,7 @@ h4{
 
 .jumbotron{
   display: flex;
-  background-color:$color2;
+  background-color:$color1;
   margin-bottom:0px;
   max-height: 300px;
   flex-flow: row;
@@ -120,7 +118,7 @@ h4{
 footer {
   position: absolute;
   color: $color5;
-  background-color: $color1;
+  background-color: $color4;
   height: 250px;
   width: 100%;
   margin-top:100px;
@@ -155,10 +153,118 @@ strong{
     padding:20px;
   }
 }
-.download_card{
-  min-height: 700px;
-  max-height:800px;
+
+.contact {
+  background-color: #000;
+  color: #fff;
 }
-.download_card_hor{
-  max-height:500px;
+.intro, .info{
+  padding:20px;
+  margin:20px;
+}
+.card_img{
+  display: inline-flex;
+  margin:20px;
+  height:200px;
+  width:200px;
+  img{
+  object-fit: cover;
+}}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin:20px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  flex-flow: row;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  img{
+    object-fit: cover;
+  }
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgba(242, 242, 242, 1);
+  color: black;
+  transform: rotateY(180deg);
+  padding:20px;
+  height:100%;
+  width:100%;
+  object-fit: contain;
+  h1{
+    font-size: 18px; 
+  }
+  h2{
+    font-size: 14px;
+  }
+}
+
+#button {
+  display: inline-block;
+  background-color: #000;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }

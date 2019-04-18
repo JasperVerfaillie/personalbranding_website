@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Jasper Verfaillie | Home</title>
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
 </head>
+
 <body>
     <nav class="navbar navbar-expand-md navbar-wit sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="home.html"><img class="navbar-brand-img" src="images/koe_down.png"></a>
+            <a class="navbar-brand" href="intro.html"><img class="navbar-brand-img" src="images/logo_jasper.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"> <i class="fas fa-bars"></i></span>
@@ -23,16 +28,13 @@
             <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item cool-link">
-                        <a class="nav-link" href="logo.html">Over mij</a>
+                        <a class="nav-link" href="#overmij">About me</a>
                     </li>
                     <li class="nav-item cool-link">
-                        <a class="nav-link" href="kleur.html">Design</a>
+                        <a class="nav-link" href="#werk">Work</a>
                     </li>
                     <li class="nav-item cool-link">
-                        <a class="nav-link" href="typo.html">Werk</a>
-                    </li>
-                    <li class="nav-item cool-link">
-                        <a class="nav-link" href="print.html">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -40,37 +42,238 @@
     </nav>
     <div class="jumbotron">
         <div class="jumbotron_img">
-            <img src="images/LOGO_zwart.png"></div>
+            <img src="images/logo_jasper.png"></div>
         <div class="jumbotron_txt">
             <h2>Portfolio</h2>
             <h5>Jasper Verfaillie</h5>
         </div>
     </div>
+    <!-- Back to top button -->
+    <a id="button"></a>
     <div class="container">
         <div class="row">
-            <div class="col-12 intro">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="col-12 info" id="overmij">
+                <h1>About me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="col-12 img_container">
-                <img src="images/paragliding-foto.jpg">
+                <img src="images/koppen.pdf">
             </div>
-            <div class="col-12 logo_uitleg">
-                <h1>Over mij</h1>
-                <p></p>
+        </div>
+        <div class="row">
+            <div class="intro" id="werk">
+                <div class="col-12">
+                    <h1>Work</h1>
+                    <p>Below you'll find a brief overview of my best and most recent work.Click on the card to discover
+                        some of my work in its full glory. Enjoy!</p>
+                </div>
             </div>
-            <div class="col-12 col-md-4 img_container">
-                <img src="images/paragliding-foto.jpg">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/vesalius infographic_klein.png" alt="Infographic">
+                        </div>
+                        <a href="images/infographic.pdf" target="_blank">
+                            <div class="flip-card-back">
+                                <h2>Infographic</h2>
+                                <h1>Andreas Vesalius</h1>
+                                <p>2018</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-4 img_container">
-                <img src="images/paragliding-foto.jpg">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/placemat-duotoon.png" alt="Zoekplaat">
+                        </div>
+                        <a href="images/placecmat2.pdf" target="_blank">
+                            <div class="flip-card-back">
+                                <h2>Placemat</h2>
+                                <h1>Zoekplaat duotoon</h1>
+                                <p>2018</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-4 img_container">
-                <img src="images/paragliding-foto.jpg">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/mockup_textiel.jpg" alt="De Gentse Zuivelhoeve">
+                        </div>
+                        <a href="http://gdmgent-1718-3cmo.github.io/1819-cmo-bap-JasperVerfaillie/home.html"
+                            target="_blank">
+                            <div class="flip-card-back">
+                                <h2>Branding</h2>
+                                <h1>De Gentse Zuivelhoeve</h1>
+                                <p>2019</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-4 img_container">
-                <img src="images/paragliding-foto.jpg">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/gaa_briefpapier.jpg" alt="Gratis Advocaten Advies">
+                        </div>
+                        <a href="images/logo GAA presentatie (versie 2).pdf" target="_blank">
+                            <div class="flip-card-back">
+                                <h2>Branding</h2>
+                                <h1>Gratis Advocaten Advies</h1>
+                                <p>2018</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/mockup_boekcover.jpg" alt="boekcover">
+                        </div>
+                        <a href="images/boekcover spread met bleed.pdf" target="_blank">
+                            <div class="flip-card-back">
+                                <h2>Boekcover</h2>
+                                <h1>De Wind in De Wilgen</h1>
+                                <p>2018</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/ULTIMO presentatie23.jpg" alt="Ultimo Chilometro">
+                        </div>
+                        <a href="images/ULTIMO presentatie.pdf" target="_blank">
+                            <div class="flip-card-back">
+                                <h2>Branding</h2>
+                                <h1>Ultimo Chilometro</h1>
+                                <p>2018</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/poster_chicagolatino.jpg" alt="poster gallerij">
+                        </div>
+                        <a href="posters.html" target="_blank">
+                            <div class="flip-card-back">
+                                <h2>Gallery</h2>
+                                <h1>Posters</h1>
+                                <p>2018-2019</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/magazine personal branding.png" alt="Magazine personal branding">
+                        </div>
+                        <a href="images/magazine personal branding.pdf" target="_blank">
+                            <div class="flip-card-back">
+                                <h2>Portfolio</h2>
+                                <h1>Persoonlijk magazine</h1>
+                                <p>2019</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/banner dansende beren.png" alt="Dansende Beren">
+                        </div>
+                        <a href="http;//www.dansendeberen.be" target="_blank">
+                            <div class="flip-card-back">
+                                <h2>Muziekjournalistiek</h2>
+                                <h1>Dansende Beren</h1>
+                                <p>2015-...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/overgelukbanner.jpg" alt="Over geluk gesproken">
+                        </div>
+                        <a href="images/Over Geluk Gesproken (no marks).pdf" target="_blank">
+                            <div class="flip-card-back">
+                                <h2>Boek lay-out</h2>
+                                <h1>Over Geluk Gesproken</h1>
+                                <p>2018</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/meme_boek blauw 2.png" alt="meme's spreukenboekje">
+                        </div>
+                        <a href="images/meme_boekje.pdf" target="_blank">
+                            <div class="flip-card-back">
+                                <h2>Boek lay-out</h2>
+                                <h1>Meme's Grote Kleine Spreukenboekje</h1>
+                                <p>2018</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Poster_VIGC_Verbindt_2018.png" alt="Vigc">
+                        </div>
+                        <a href="images/vigc_presentatie_maart.pdf" target="_blank">
+                            <div class="flip-card-back">
+                                <h2>Branding</h2>
+                                <h1>Vigc Verbindt 2018</h1>
+                                <p>2018</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
+
+
+        </div>
+        <div class="row">
+            <div class="col-12 contact" id="contact">
+                <h1>Contact</h1>
+                <p></p>
+            </div>
         </div>
     </div>
     <footer>
@@ -79,10 +282,7 @@
                 <div class="col-12">
                     <p>
                         Copyright © | 2019 | Jasper Verfaillie | All rights reserved I<br>
-Arteveldehogeschool | academiejaar 2018 - 2019 <br>
-                        Contact:<br>
-                        verfaillie.jasper@gmail.com of <br>
-
+                        Arteveldehogeschool | academiejaar 2018 - 2019 <br>
                 </div>
             </div>
         </div>
@@ -97,6 +297,7 @@ Arteveldehogeschool | academiejaar 2018 - 2019 <br>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
+    <script src="js/script.js"></script>
 
 </body>
 
