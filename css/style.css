@@ -175,8 +175,8 @@ strong {
 }
 
 .contact {
-  background-color: #000;
-  color: #fff;
+  padding: 20px;
+  margin: 20px;
 }
 
 .intro, .info {
@@ -268,6 +268,8 @@ strong {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .flip-card-back h1 {

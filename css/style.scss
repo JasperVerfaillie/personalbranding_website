@@ -155,8 +155,8 @@ strong{
 }
 
 .contact {
-  background-color: #000;
-  color: #fff;
+  padding:20px;
+  margin:20px;
 }
 .intro, .info{
   padding:20px;
@@ -224,6 +224,7 @@ strong{
   height:100%;
   width:100%;
   object-fit: contain;
+  align-content: center;
   h1{
     font-size: 18px; 
   }
