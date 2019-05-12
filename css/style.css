@@ -137,7 +137,7 @@ footer {
   position: absolute;
   color: #fff;
   background-color: #000;
-  height: 250px;
+  height: 150px;
   width: 100%;
   margin-top: 100px;
   text-align: center;
@@ -325,5 +325,57 @@ strong {
 #button.show {
   opacity: 1;
   visibility: visible;
+}
+
+.fa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-envelope {
+  background: #c03a30;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
